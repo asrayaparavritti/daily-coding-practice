@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: androidfont;
+  src: url(assets/fontes/idroid.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: #84E1AD;
+    
+}
+
+header {
+    background: linear-gradient(to bottom,#39CB79, #1A5C38 );
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+#menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: white;
+  transition: background 0.5s; /*so funciona com o hover, mas quero deixar aq*/
+}
+
+#main-title{
+  font-family: 'androidfont';
+  color: #1A5C38;
+}
+
+.sub-title {
+  font-family: 'androidfont';
+  color: #1A5C38;
+}
+
+.site-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main-content {
+  background-color: white;  
+  padding: 20px;
+  margin: 0 auto;
+  
+  justify-content: center;
+  box-sizing: border-box;
+
+  max-width: 800px;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.extra-content {
+  background-color: #C5EBD6;
+  border-top-left-radius: 3dvh;
+  border-top-right-radius: 3dvh;
+  margin: 10px;
+
+
+}
+
+#initial-extra{
+  background-color: #39CB79;
+  color: white;
+  border-top-left-radius: 1dvh;
+  border-top-right-radius: 1dvh;
+  padding: 10px;
+  
+  font-size: large;
+}
+
+#list-android ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#youtube-video {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+#youtube-video iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+
+footer{
+  background-color: #1A5C38;
+  justify-content: center;
+  display: flex;
+  color: white;
+  gap: 10px;
+}

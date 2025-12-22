@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Imagem flexivel</h1>
+    <p>Voce esta vendo a imagem completa? experimente ampliar o tamanho da sua janela para aproveitar a melhor experiencia!🤓</p>
+
+    <picture>
+
+        <source media="(max-width:500px)" srcset="imagens/paisagem-p.png">
+        <source media="(max-width:900px)" srcset="imagens/paisagem-m.png">
+        <source media="(max-width:1200px)" srcset="imagens/paisagem-g.png">
+        <img src="imagens/paisagem-g.png" style="width: auto; height: auto;" alt="imagem-grandona">
+        
+    </picture>
+
+</body>
+</html>
