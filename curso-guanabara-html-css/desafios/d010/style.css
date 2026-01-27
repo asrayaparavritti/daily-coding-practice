@@ -7,10 +7,16 @@
 header {
   background: linear-gradient(rgb(55, 196, 116), rgb(26, 92, 56));
   padding: 45px;
+  margin-bottom: 0;
 }
 
-main {
+.main {
   background-color: rgb(132, 225, 173);
+  margin-top: 0;
+}
+
+#main-title {
+  margin-top: 0;
 }
 
 .main-content {
