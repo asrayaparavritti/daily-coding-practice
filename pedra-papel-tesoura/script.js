@@ -3,4 +3,7 @@
    #3 - comparar escolhas
    #4 - mostrar resultado */
 
-   
+
+   function getComputerChoice () {
+    let cpuChoice = Math.floor
+   }
