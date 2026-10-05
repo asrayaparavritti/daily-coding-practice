@@ -8,4 +8,9 @@
    
  function getComputerChoice () {
   let cpuChoice = Math.floor(Math.random() * 3);
+
+  return cpuChoice;
  }
+
+ console.log(getComputerChoice());
+
