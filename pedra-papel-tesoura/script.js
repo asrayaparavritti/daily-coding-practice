@@ -34,11 +34,11 @@
 
  }
 
- console.log(getHumanChoice());
+ // Play Game
 
+ function playGame() {
 
-
- function playRound (humanChoice, computerChoice) {
+  function playRound (humanChoice, computerChoice) {
 
   humanChoice = humanChoice.toLowerCase();
 
@@ -61,5 +61,7 @@
     computerScore++;
     console.log("O computador ganhou esse Round!")
   }
+
+ }
 
  }
