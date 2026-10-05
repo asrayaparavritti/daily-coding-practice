@@ -1,4 +1,9 @@
 
+ // Global variables
+
+ let humanScore = 0;
+ let computerScore = 0;
+ 
  // Computer Choice
  
  function getComputerChoice () {
@@ -19,16 +24,42 @@
 
  }
 
- // USer Choice
+ // User Choice
 
  function getHumanChoice () {
 
-  let userChoice = prompt("Digite a sua escolha: ");
+  let humanChoice = prompt("Digite a sua escolha: ");
 
-
-
-  return userChoice.toLowerCase();
+  return humanChoice;
 
  }
 
  console.log(getHumanChoice());
+
+
+
+ function playRound (humanChoice, computerChoice) {
+
+  humanChoice = humanChoice.toLowerCase();
+
+  if (computerChoice === humanChoice) {
+    console.log("Empate!")
+
+  } else if ( computerChoice === "pedra" && humanChoice === "papel") {
+    humanScore++;
+    console.log("O usuario ganhou esse Round!");
+
+  } else if ( computerChoice === "papel" && humanChoice === "tesoura") {
+    humanScore++;
+    console.log("O usuario ganhou esse Round!");
+
+  } else if ( computerChoice === "tesoura" && humanChoice === "pedra") {
+    humanScore++;
+    console.log("O usuario ganhou esse Round!");
+
+  } else {
+    computerScore++;
+    console.log("O computador ganhou esse Round!")
+  }
+
+ }
