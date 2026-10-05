@@ -64,4 +64,38 @@
 
  }
 
+ let humanSelection = getHumanChoice();
+ let computerSelection = getComputerChoice();
+
+ playRound(humanSelection, computerSelection);
+
+ humanSelection = getHumanChoice();
+ computerSelection = getComputerChoice();
+
+ playRound(humanSelection, computerSelection);
+
+ humanSelection = getHumanChoice();
+ computerSelection = getComputerChoice();
+
+ playRound(humanSelection, computerSelection);
+
+ humanSelection = getHumanChoice();
+ computerSelection = getComputerChoice();
+
+ playRound(humanSelection, computerSelection);
+
+ humanSelection = getHumanChoice();
+ computerSelection = getComputerChoice();
+
+ playRound(humanSelection, computerSelection);
+
+ if (humanScore > computerScore) {
+  console.log(`O usuario ganhou com ${humanScore} pontos!`);
+ } else if ( computerScore > humanScore) {
+  console.log(`O computador ganhou com ${computerScore} pontos!`);
+ } else {
+  console.log("Empate!")
  }
+
+ }
+
